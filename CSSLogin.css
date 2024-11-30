@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #C8A165;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    border-radius: 10px;
+    padding: 40px; /* Memperbesar padding */
+    width: 500px; /* Memperbesar ukuran form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    text-align: center;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.toggle-btn {
+    width: 50%;
+    padding: 20px; /* Memperbesar padding tombol */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px; /* Memperbesar font */
+    font-weight: bold;
+    color: gray;
+}
+
+.toggle-btn.active {
+    background: #C8A165;
+    color: white;
+    border-radius: 20px 20px 0 0;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    padding: 40px; /* Memperbesar padding isi form */
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.form-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.form-logo {
+    width: 50px; /* Ukuran logo diperbesar */
+    height: 50px;
+    margin-right: 10px;
+}
+
+.form-title {
+    font-size: 28px; /* Memperbesar ukuran teks */
+    color: #C8A165;
+    font-weight: bold;
+}
+
+input {
+    padding: 15px; /* Memperbesar input */
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px; /* Memperbesar font input */
+}
+
+.btn {
+    padding: 15px;
+    background: #C8A165;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Memperbesar font tombol */
+}
+
+.forgot {
+    text-decoration: none;
+    color: #C8A165;
+    font-size: 16px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.member-text {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.member-text a {
+    color: #C8A165;
+    text-decoration: none;
+}
+
+.member-text a:hover {
+    text-decoration: underline;
+}

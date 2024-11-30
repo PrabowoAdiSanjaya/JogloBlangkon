@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup Form</title>
+    <link rel="stylesheet" href="CSSLogin.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-header">
+                <button id="loginBtn" class="toggle-btn active" onclick="showLogin()">Login</button>
+                <button id="signupBtn" class="toggle-btn" onclick="showSignup()">Signup</button>
+            </div>
+
+            <!-- Form Login -->
+            <form id="loginForm" class="form-content" onsubmit="validateLogin(event)">
+                <div class="form-title-container">
+                    <img src="Logo Joblank.png" alt="Joblank Logo" class="form-logo">
+                    <h2 class="form-title">LOGIN JOBLANK</h2>
+                </div>
+                <input type="email" id="loginEmail" placeholder="Email Address" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <a href="#" class="forgot">Forgot password?</a>
+                <button type="submit" class="btn">Login</button>
+                <p id="loginError" class="error-message"></p> <!-- Pesan error akan ditampilkan di sini -->
+                <p id="resetPasswordLink" class="reset-message" style="display: none;">Reset password?</p> <!-- Reset link -->
+            </form>
+
+            <!-- Form Signup -->
+            <form id="signupForm" class="form-content hidden" onsubmit="validateSignup(event)">
+                <div class="form-title-container">
+                    <img src="Logo Joblank.png" alt="Joblank Logo" class="form-logo">
+                    <h2 class="form-title">SIGN UP JOBLANK</h2>
+                </div>
+                <input type="email" id="signupEmail" placeholder="Email Address" required>
+                <input type="password" id="signupPassword" placeholder="Password" required>
+                <button type="submit" class="btn">Signup</button>
+            </form>
+            <p class="member-text">Belum mendaftar? <a href="#" onclick="showSignup()">Signup sekarang</a></p>
+        </div>
+    </div>
+    <script src="JavaLogin.js"></script>
+</body>
+</html> 

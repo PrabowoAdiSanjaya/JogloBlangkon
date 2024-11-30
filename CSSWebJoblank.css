@@ -1,0 +1,857 @@
+/* CSS NAVBAR HOME */
+/* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Style untuk header */
+header {
+    background-image: url("Banner\ Joblank\ Terbaik.png "); /* Ganti URL dengan path gambar banner kamu */
+    background-size: cover; /* Menutup area header sepenuhnya */
+    background-position: center; /* Gambar dipusatkan */
+    height: 400px; /* Tinggi header */
+    width: 100%; /* Lebar penuh */
+    position: relative; /* Posisi relatif untuk memungkinkan konten di dalamnya diatur */
+}
+
+.banner-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay semi-transparan */
+}
+
+/* Style untuk logo */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo-img {
+    width: 100px; /* Ukuran logo */
+    height: auto;
+}
+
+/* Style untuk navbar */
+nav {
+    position: absolute;
+    top: 20px;
+    right: 40px; /* Adds spacing from the right side */
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar li a:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Latar belakang lebih gelap saat hover */
+}
+
+/* Style untuk teks pada banner */
+.banner-text {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.banner-text h1 {
+    font-size: 2.5rem;
+    font-family: 'Lora', serif;
+}
+
+.banner-text p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #C8A165;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #a37e4f;
+}
+
+/* Font untuk tulisan */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header dan Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #C8A165;
+    color: #fff;
+}
+
+header .logo-img {
+    width: 100px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 1s;
+}
+
+.navbar li a:hover {
+    color: #333;
+}
+
+/* Section tentang Joblank */
+.about-us {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    color: #C8A165;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Sorotan Menu */
+.highlights {
+    padding: 30px 15px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.highlights h2 {
+    font-size: 28px;
+    color: #C8A165;
+    margin-bottom: 30px;
+}
+
+/* Layout for each menu item */
+.menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%; /* Membatasi lebar item */
+    margin: 0 auto; /* Mengatur item ke tengah */
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.image-box {
+    flex: 1;
+    max-width: 150px; /* Membatasi lebar gambar agar tetap proporsional */
+    height: 150px; /* Menjaga tinggi untuk 1:1 */
+    overflow: hidden; /* Crop gambar yang berlebihan */
+}
+
+.menu-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Memastikan gambar ter-crop dan menyesuaikan kotak */
+    border-radius: 6px;
+}
+
+.text-box {
+    flex: 2;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.text-box h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.text-box p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.text-box a {
+    color: #C8A165;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.text-box a:hover {
+    text-decoration: underline;
+}
+
+/* Slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Navigation buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5); /* Memberikan latar belakang gelap */
+    border-radius: 50%; /* Bentuk bulat */
+}
+
+.prev {
+    left: 10px; /* Memastikan tombol berada di pinggir */
+}
+
+.next {
+    right: 10px; /* Memastikan tombol berada di pinggir */
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Dots */
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Section Keunggulan Kami */
+.features {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 32px;
+    color: #C8A165;
+    margin-bottom: 30px;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+.features ul li {
+    margin-bottom: 15px;
+}
+
+.feature-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+/* Tombol "Jelajahi Menu Kami" */
+.menu-explore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; /* Jarak atas */
+}
+
+.explore-btn {
+    background-color: #C8A165;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.explore-btn:hover {
+    background-color: #a47550;
+    transform: scale(1.05); /* Efek pembesaran sedikit saat dihover */
+}
+
+/* CSS untuk Testimoni */
+.testimoni {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.testimoni h2 {
+    font-size: 28px;
+    color: #C8A165;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.testi-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.testi-item {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+} 
+
+.testi-item:hover {
+    transform: translateY(-5px);
+}
+
+.testi-item p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.testi-item span {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+}
+
+/* CSS untuk section Komentar dan Rating */
+.comment-rating {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.comment-rating h2 {
+    font-size: 26px;
+    color: #C8A165;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.comment-form label {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.comment-form input[type="text"],
+.comment-form textarea,
+.comment-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.comment-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.comment-form button.btn-primary {
+    background-color: #C8A165;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment-form button.btn-primary:hover {
+    background-color: #b58a53;
+}
+
+/* Footer */
+footer {
+    background-color: #C8A165;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.social-media img {
+    width: 30px;
+    margin: 0 10px;
+    position: center;
+}
+
+/* CSS NAVBAR CONTACT */
+
+/* Mengatur font keseluruhan dan warna latar belakang */
+body {
+    font-family: 'Poppins', sans-serif; /* Ganti dengan font yang diinginkan */
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Semua elemen dirata tengah */
+}
+
+/* Mengatur bagian header */
+header {
+    background-color: #C8A165;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-img {
+    max-width: 150px;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #6b4f1d;
+}
+
+/* Mengatur bagian utama */
+main {
+    padding: 50px 20px;
+}
+
+h1, h2 {
+    color: #C8A165;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Mempercantik bagian contact-intro dengan latar belakang warna krem */
+.contact-intro {
+    background-color: #f9e4c8;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mempercantik bagian jam operasional dengan warna coklat lembut */
+.operational-hours {
+    background-color: #f4dcc0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mempercantik bagian informasi kontak */
+.contact-info {
+    background-color: #f0d8b6;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+/* Mempercantik bagian kunjungi kami dengan warna coklat muda */
+.contact-info iframe {
+    border: 0;
+    margin-top: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mengatur bagian footer */
+footer {
+    background-color: #C8A165;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* CSS NAVBAR MENU */
+
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #C8A165;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    width: 120px;
+    height: auto;
+}
+.logbtn {
+    width: 100px;
+    height: 46px;
+    position: relative;
+    bottom: 9px;
+    border-radius: 5px;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+.logbtn a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    color: #C8A165;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.product-intro h1 {
+    font-size: 36px;
+    color: #C8A165;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.product-intro p {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+}
+
+.product-category {
+    margin-bottom: 40px;
+}
+
+.product-category h2 {
+    font-size: 28px;
+    color: #C8A165;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    display: block;
+}
+
+/* Animation for content sliding in */
+.menu-content {
+    opacity: 0;
+    transform: translateX(100%); /* Position outside from the right */
+    transition: transform 5s ease, opacity 0.5s ease; /* Smooth transition */
+}
+
+.menu-content.active {
+    opacity: 1;
+    transform: translateX(0); /* Slide into place */
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    font-size: 22px;
+    color: #333;
+}
+
+.product-item p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.order-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #C8A165;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #a17c49;
+}
+
+footer {
+    background-color: #C8A165;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* CSS NAVBAR ORDER */
+
+/* Styling untuk halaman Order */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f5f0;
+    margin: 0;
+    padding: 0;
+}
+
+.order-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #C8A165;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 1rem;
+    color: #333;
+}
+
+input, select, textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+input[type="number"] {
+    width: 100px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button.submit-btn {
+    padding: 12px;
+    background-color: #C8A165;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.submit-btn:hover {
+    background-color: #a88d53;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid #C8A165;
+}
+
+@media (max-width: 600px) {
+    .order-container {
+        margin: 10px;
+        padding: 15px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    button.submit-btn {
+        font-size: 0.9rem;
+    }
+}   

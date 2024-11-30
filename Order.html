@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joblank - Menu Produk</title>
+    <link rel="stylesheet" href="CSSWebJoblank.css">
+</head> 
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="Logo Joblank.png" alt="Logo Joblank" class="logo-img">
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="Order.html" class="active">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="order-container">
+        <h1>Pemesanan Makanan Joblank</h1>
+        
+        <form action="submit-order.php" method="POST" class="order-form">
+            <!-- Nama Lengkap -->
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" required>
+
+            <!-- Nomor Telepon -->
+            <label for="phone">Nomor Telepon:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon" required>
+
+            <!-- Alamat Pengiriman -->
+            <label for="address">Alamat Pengiriman:</label>
+            <textarea id="address" name="address" placeholder="Masukkan alamat pengiriman" required></textarea>
+
+            <!-- Metode Pembayaran -->
+            <label for="payment">Metode Pembayaran:</label>
+            <select id="payment" name="payment" required>
+                <option value="bank_transfer">Transfer Bank</option>
+                <option value="cod">Cash On Delivery (COD)</option>
+            </select>
+
+            <!-- Pilih Produk -->
+            <label for="product">Pilih Makanan:</label>
+            <select id="product" name="product" required>
+                <option value="">-- Pilih Makanan --</option>
+                <option value="Gudeg Jogja">Gudeg Jogja</option>
+                <option value="Sate Kere">Sate Kere</option>
+                <option value="Sego Liwet Solo">Sego Liwet Solo</option>
+                <option value="Rawon">Rawon</option>
+                <option value="Garang Asem Gagasa Kudus">Garang Asem Gagasa Kudus</option>
+                <option value="Soto Kudus">Soto Kudus</option>
+            </select>
+
+            <!-- Jumlah Pesanan -->
+            <label for="quantity">Jumlah Makanan:</label>
+            <input type="number" id="quantity" name="quantity" min="1" placeholder="Jumlah pesanan" required>
+
+             <!-- Pilih Produk -->
+             <label for="product">Pilih Minuman:</label>
+             <select id="product" name="product" required>
+                <option value="Es Teh/Teh Anget">Es Teh/Teh Anget</option>
+                <option value="Wedang Ronde">Wedang Ronde</option>
+                <option value="Es Dawet Ayu">Es Dawet Ayu</option>
+                <option value="Wedang Asle">Wedang Asle</option>
+                <option value="Es Campur">Es Campur</option>
+                <option value="Es Sinom Surabaya">Es Sinom Surabaya</option>
+             </select>
+ 
+             <!-- Jumlah Pesanan -->
+             <label for="quantity">Jumlah Minuman:</label>
+             <input type="number" id="quantity" name="quantity" min="1" placeholder="Jumlah pesanan" required>
+
+             <!-- Pilih Produk -->
+             <label for="product">Pilih Camilan:</label>
+             <select id="product" name="product" required>
+                <option value="Mendoan">Mendoan</option>
+                <option value="Serabi solo">Serabi Solo</option>
+                <option value="Kacang Godog">Kacang Godog</option>
+                <option value="Klepon">Klepon</option>
+                <option value="Gethuk Lindri">Gethuk Lindri</option>
+                <option value="Jagung Rebus">Jagung Rebus</option>
+             </select>
+ 
+             <!-- Jumlah Pesanan -->
+             <label for="quantity">Jumlah Camilan:</label>
+             <input type="number" id="quantity" name="quantity" min="1" placeholder="Jumlah pesanan" required>
+
+            <!-- Pesan Khusus -->
+            <label for="special-request">Beri Catatan Untuk Restoran:</label>
+            <textarea id="special-request" name="special-request" placeholder="Tulis pesan khusus, misalnya tingkat kepedasan" ></textarea>
+
+            <!-- Tombol Kirim -->
+            <button type="submit" class="submit-btn">Buat Pesanan</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background-color: #C8A165; color: #fff; padding: 20px;">
+        <p>&copy; 2024 Joblank. Semua Hak Dilindungi Undang-Undang.</p>
+        <p> Tel : +62-895-2568-4106 | Email : restaurantjoblank@gmail.com | Instagram : @jogloblangkon </p>
+        <p>Alamat : Jl. DI Panjaitan No.128, Karangreja, Purwokerto Kulon, Kec. Purwokerto Selatan, Kabupaten Banyumas, Jawa Tengah 53141 </p>
+    </footer>
+</body>
+</html>
